@@ -280,7 +280,7 @@ function About() {
   a feature, a tool, or even a small system that solves a problem.
 </p>
 
-<p className="about-annotation" style={{ color: "#e879a0" }}>...always trying to learn something new ✨</p>
+<p className="about-annotation" style={{ color: "#e879a0" }}>...always trying to learn something new </p>
         </div>
       </section>
     );
