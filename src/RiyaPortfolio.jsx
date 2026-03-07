@@ -154,14 +154,7 @@ function useReveal() {
   }, []);
 }
 
-const SKILLS = [
-  { num: "01", icon: "🐍", title: "Python & Data",      body: "Fluent in Python for data engineering, ML pipelines, and reproducible analysis.",    pills: ["Python", "Pandas", "NumPy", "scikit-learn"] },
-  { num: "02", icon: "☕", title: "Java & OOP",         body: "Strong in object-oriented design, multi-role systems, and unit testing.",             pills: ["Java", "OOP", "JUnit", "C++"] },
-  { num: "03", icon: "🧩", title: "DSA",                body: "Solid grasp of data structures and algorithms for efficient problem solving.",        pills: ["Algorithms", "Data Structures", "Complexity"] },
-  { num: "04", icon: "🤖", title: "Machine Learning",   body: "Classification models, feature engineering, and ML evaluation metrics.",              pills: ["Classification", "ROC-AUC", "F1 Score"] },
-  { num: "05", icon: "⚛️", title: "Frontend",           body: "Building user-friendly interfaces with React.js and modern web technologies.",         pills: ["React.js", "HTML/CSS", "JavaScript"] },
-  { num: "06", icon: "📋", title: "Project Management", body: "Engineering management mindset — planning, collaboration, delivering with precision.", pills: ["Team Collab", "Planning", "Eng. Management"] },
-];
+
 
 const PROJECTS = [
   {
@@ -205,10 +198,6 @@ const EDU_LIST = [
     { text: "Relevant Coursework: Data Structures and Algorithms, Operating Systems, Database Management Systems, Software Engineering, Assembly Language Programming", meta: "" },
   ];
 
-const LANGUAGES = [
-  { label: "Native:", value: "Hindi / Marathi", accent: true },
-  { label: "Fluent:", value: "English C1", accent: false },
-];
 
 // Navigation
 function Nav() {
