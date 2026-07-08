@@ -159,6 +159,18 @@ function useReveal() {
 const PROJECTS = [
   {
     num: "01",
+    category: "Data Analytics · SQL · Tableau",
+    name: "Starbucks US Market\nExpansion Analysis",
+    bullets: [
+      "Analyzed 13,000+ US Starbucks locations against US Census demographic data using SQL to identify underserved high-income markets.",
+      "Built and published an interactive Tableau dashboard visualizing store density, city concentration, and ownership patterns across all 50 states.",
+      "Identified Delaware, Rhode Island, and New Hampshire as top expansion opportunities — avg income $61–69k with under 300 stores each.",
+    ],
+    tech: ["SQL", "Tableau", "Data Analysis"],
+    link: "https://public.tableau.com/views/StarbucksUSMarketExpansionAnalysis/Dashboard1",
+  },
+  {
+    num: "02",
     category: "Machine Learning",
     name: "Air Quality Risk Prediction\n& Trend Analysis",
     bullets: [
@@ -167,9 +179,10 @@ const PROJECTS = [
       "Implemented data preprocessing and feature engineering using scikit-learn pipelines for reproducible model training.",
     ],
     tech: ["Python", "Pandas", "NumPy", "scikit-learn"],
+    link: null,
   },
   {
-    num: "02",
+    num: "03",
     category: "AI / Full-Stack",
     name: "Brev\nAI Learning Assistant",
     bullets: [
@@ -177,9 +190,10 @@ const PROJECTS = [
       "Engineered an engaging React.js front-end, optimizing UX and visual flow for quick knowledge recall.",
     ],
     tech: ["React.js", "AI / LLM", "Full-Stack"],
+    link: null,
   },
   {
-    num: "03",
+    num: "04",
     category: "Java / Software Engineering",
     name: "Reviewer\nManagement System",
     bullets: [
@@ -188,6 +202,7 @@ const PROJECTS = [
       "Applied OOP concepts — encapsulation, classes, methods — to support robust multi-role functionality.",
     ],
     tech: ["Java", "OOP", "JUnit"],
+    link: null,
   },
 ];
 
@@ -550,7 +565,11 @@ function Projects() {
                 <span className="proj-tag" key={t}>{t}</span>
               ))}
             </div>
-            <div className="proj-arrow-btn">↗</div>
+           {proj.link ? (
+  <a href={proj.link} target="_blank" rel="noopener noreferrer" className="proj-arrow-btn" style={{ textDecoration: "none" }}>↗</a>
+) : (
+  <div className="proj-arrow-btn">↗</div>
+)}
           </div>
         </div>
       ))}
