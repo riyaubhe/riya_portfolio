@@ -183,6 +183,18 @@ const PROJECTS = [
   },
   {
     num: "03",
+    category: "Machine Learning · Data Analytics",
+    name: "Student Dropout\nRisk Prediction",
+    bullets: [
+      "Built a binary classification model on 4,400+ student records to predict dropout risk, comparing Logistic Regression and Random Forest (0.93 ROC-AUC).",
+      "Identified first-year academic performance as the dominant predictor of dropout — far more influential than demographics or intake-time features.",
+      "Framed around proactive early-intervention insight, directly tied to experience as a CSE 205 TA and PULSE Tutoring Center Shift Lead.",
+    ],
+    tech: ["Python", "Scikit-Learn", "Pandas"],
+    link: "https://github.com/riyaubhe/student-dropout-risk-prediction",
+  }, 
+  {
+    num: "04",
     category: "AI / Full-Stack",
     name: "Brev\nAI Learning Assistant",
     bullets: [
@@ -193,7 +205,7 @@ const PROJECTS = [
     link: null,
   },
   {
-    num: "04",
+    num: "05",
     category: "Java / Software Engineering",
     name: "Reviewer\nManagement System",
     bullets: [
@@ -205,18 +217,7 @@ const PROJECTS = [
     link: null,
   },
 ];
-  {
-    num: "05",
-    category: "Machine Learning · Data Analytics",
-    name: "Student Dropout\nRisk Prediction",
-    bullets: [
-      "Built a binary classification model on 4,400+ student records to predict dropout risk, comparing Logistic Regression and Random Forest (0.93 ROC-AUC).",
-      "Identified first-year academic performance as the dominant predictor of dropout — far more influential than demographics or intake-time features.",
-      "Framed around proactive early-intervention insight, directly tied to experience as a CSE 205 TA and PULSE Tutoring Center Shift Lead.",
-    ],
-    tech: ["Python", "Scikit-Learn", "Pandas"],
-    link: "https://github.com/riyaubhe/student-dropout-risk-prediction",
-  },
+ 
 
 const EDU_LIST = [
     { text: "B.S. Computer Science, Arizona State University, Tempe", meta: "— Minor in Engineering Management" },
