@@ -192,7 +192,7 @@ const PROJECTS = [
     ],
     tech: ["Python", "Scikit-Learn", "Pandas"],
     link: "https://github.com/riyaubhe/student-dropout-risk-prediction",
-  }, 
+  },
   {
     num: "04",
     category: "AI / Full-Stack",
@@ -217,11 +217,49 @@ const PROJECTS = [
     link: null,
   },
 ];
- 
+
+
+const EXPERIENCE = [
+  {
+    role: "Shift Lead",
+    org: "FSE PULSE Tutoring Centers",
+    place: "Arizona State University",
+    dates: "May 2026 – Present",
+    bullets: [
+      "Help manage a team of 35 tutors to keep the center running smoothly",
+      "Handle the center's social media and marketing to reach more students",
+      "Host events to boost tutor engagement and promote the center",
+    ],
+  },
+  {
+    role: "Undergraduate Researcher",
+    org: "CXFEL Lab",
+    place: "Arizona State University",
+    dates: "May 2026 – Aug 2026",
+    bullets: [
+      "Hands-on beamline bring-up with a 40-person team of engineers and physicists",
+      "Modeled beamline equipment in SolidWorks from stakeholder requirements",
+    ],
+  },
+  {
+    role: "Teaching Assistant",
+    org: "CSE 205: OOP & Data Structures",
+    place: "Arizona State University",
+    dates: "Jan 2025 – May 2026",
+    bullets: [],
+  },
+  {
+    role: "Software Engineering Intern",
+    org: "Align Technology",
+    place: "Pune, India",
+    dates: "Aug – Oct 2022",
+    bullets: [],
+  },
+];
 
 const EDU_LIST = [
     { text: "B.S. Computer Science, Arizona State University, Tempe", meta: "— Minor in Engineering Management" },
-    { text: "Dean's List, Arizona State University", meta: "— Fall 2023 – Fall 2025" },
+    { text: "Dean's List, Arizona State University", meta: "— Fall 2023 – Spring 2026" },
     { text: "NAMU Scholarship Recipient, Arizona State University", meta: "" },
     { text: "Relevant Coursework: Data Structures and Algorithms, Operating Systems, Database Management Systems, Software Engineering, Assembly Language Programming", meta: "" },
   ];
@@ -231,9 +269,9 @@ const EDU_LIST = [
 function Nav() {
   return (
     <nav className="nav">
-      <span className="nav-side">2025</span>
+      <span className="nav-side">2026</span>
       <div className="nav-center-group">
-       
+
       </div>
       <span className="nav-side">Riya Shekhar Ubhe</span>
     </nav>
@@ -296,16 +334,16 @@ function About() {
             Hello<span style={{ color: "#e879a0" }}>.</span>
           </h2>
           <p className="about-text">
-  I'm <strong>Riya Shekhar Ubhe</strong>, a junior studying{" "}
+  I'm <strong>Riya Shekhar Ubhe</strong>, a senior studying{" "}
   <strong>Computer Science</strong> at Arizona State University with a minor in{" "}
   <strong>Engineering Management</strong>. I'm someone who learns best by building — trying
   things out, breaking them, fixing them, and understanding how everything works under the hood.
 </p>
 <p className="about-text" style={{ marginTop: 16 }}>
-  Right now I'm exploring different parts of software development, from working with machine
-  learning models on real datasets to building full-stack applications that people can actually
-  interact with. What excites me most is seeing how an idea slowly turns into something real —
-  a feature, a tool, or even a small system that solves a problem.
+  Lately I've been drawn to the space where data meets decisions — digging into real datasets
+  to find the story behind the numbers, and figuring out how teams, timelines, and people come
+  together to actually ship something. What excites me most is seeing how an idea slowly turns
+  into something real — and using data to make sure it's the right idea in the first place.
 </p>
 
 <p className="about-annotation" style={{ color: "#e879a0" }}>...always trying to learn something new </p>
@@ -321,7 +359,7 @@ function Education() {
         id="education"
         style={{
           display: "flex",
-          justifyContent: "center",  
+          justifyContent: "center",
           paddingTop: "140px",
           paddingBottom: "140px"
         }}
@@ -343,7 +381,7 @@ function Education() {
               expect to graduate in 2027. Most of my coursework focuses on building a strong foundation
               in software systems, programming, and data-driven problem solving.
             </p>
-  
+
             <ul className="edu-list">
               {EDU_LIST.map((item) => (
                 <li key={item.text}>
@@ -364,7 +402,7 @@ function Education() {
               ))}
             </ul>
           </div>
-  
+
           <div
             className="reveal"
             style={{
@@ -386,7 +424,7 @@ function Education() {
                 background: "#e879a0"
               }}
             />
-  
+
             <div
               style={{
                 border: "1px solid rgba(0,0,0,0.08)",
@@ -400,7 +438,7 @@ function Education() {
             >
               <div style={{ textAlign: "center" }}>
                 <img
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://github.com/YOUR_USERNAME"
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://github.com/riyaubhe"
                   alt="GitHub QR"
                   style={{ width: "140px", height: "140px", display: "block" }}
                 />
@@ -415,10 +453,10 @@ function Education() {
                   GitHub
                 </p>
               </div>
-  
+
               <div style={{ textAlign: "center" }}>
                 <img
-                  src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://linkedin.com/in/YOUR_USERNAME"
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://www.linkedin.com/in/riya-ubhe/"
                   alt="LinkedIn QR"
                   style={{ width: "140px", height: "140px", display: "block" }}
                 />
@@ -434,7 +472,7 @@ function Education() {
                 </p>
               </div>
             </div>
-  
+
             <div>
               <h3 className="edu-langs-heading">Languages</h3>
               <div className="lang-row">
@@ -459,13 +497,13 @@ function Skills() {
     return (
       <section className="skills-section" id="skills">
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
-  
+
           {/* LEFT */}
           <div>
             <div className="reveal">
               <h2 className="serif-heading skills-heading">Skills</h2>
             </div>
-  
+
             <div className="reveal" style={{ marginTop: "32px", position: "relative", display: "block" }}>
               <svg style={{ position: "absolute", top: "-16px", left: "0", width: "420px", height: "110px", pointerEvents: "none" }} viewBox="0 0 420 110" fill="none">
                 <ellipse cx="210" cy="55" rx="205" ry="50" stroke="#e879a0" strokeWidth="1.5" strokeDasharray="6 4" opacity="0.5"/>
@@ -481,7 +519,7 @@ function Skills() {
               </div>
               <p style={{ fontFamily: "'Caveat', cursive", fontSize: "18px", color: "#e879a0", position: "absolute", top: "-34px", right: "0px", transform: "rotate(3deg)", whiteSpace: "nowrap" }}>always learning ✦</p>
             </div>
-  
+
             <div className="reveal" style={{ marginTop: "32px" }}>
               <p style={{ fontSize: "14px", color: "var(--charcoal)", lineHeight: "1.9", marginBottom: "8px" }}>• Fluent in Python for data engineering, ML pipelines, and reproducible analysis</p>
               <p style={{ fontSize: "14px", color: "var(--charcoal)", lineHeight: "1.9", marginBottom: "8px" }}>• Strong in object-oriented design, multi-role systems, and unit testing in Java</p>
@@ -489,7 +527,7 @@ function Skills() {
               <p style={{ fontSize: "14px", color: "var(--charcoal)", lineHeight: "1.9", marginBottom: "8px" }}>• Classification models, feature engineering, and ML evaluation metrics</p>
               <p style={{ fontSize: "14px", color: "var(--charcoal)", lineHeight: "1.9" }}>• Building user-friendly interfaces with React.js and modern web technologies</p>
             </div>
-  
+
             <div className="reveal" style={{ marginTop: "40px", display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "24px" }}>
               <div>
                 <p style={{ fontFamily: "'Caveat', cursive", fontSize: "18px", color: "#e879a0", marginBottom: "12px" }}>Languages</p>
@@ -511,50 +549,64 @@ function Skills() {
               </div>
             </div>
           </div>
-  
+
           {/* RIGHT */}
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", gap: "0" }}>
             <div className="reveal" style={{ background: "var(--cream2)", border: "1px solid rgba(0,0,0,0.06)", padding: "40px 36px", borderRadius: "4px" }}>
               <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "22px", fontWeight: "700", color: "var(--dark)", marginBottom: "32px" }}>Experience</p>
-              <div style={{ display: "flex", gap: "16px", marginBottom: "28px" }}>
-                <div style={{ width: "2px", background: "#e879a0", minHeight: "60px", flexShrink: 0 }}/>
-                <div>
-                  <p style={{ fontSize: "13px", color: "#e879a0", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "6px" }}>Teaching Assistant</p>
-                  <p style={{ fontSize: "14px", color: "var(--charcoal)", lineHeight: "1.7" }}>CSE 205: OOP & Data Structures</p>
-                  <p style={{ fontSize: "13px", color: "var(--muted)" }}>Arizona State University</p>
-                  <p style={{ fontSize: "12px", color: "var(--muted)", marginTop: "4px" }}>Jan 2025 – May 2026</p>
+
+              {/* One block per job in the EXPERIENCE list above */}
+              {EXPERIENCE.map((job, i) => (
+                <div
+                  key={job.role}
+                  style={{ display: "flex", gap: "16px", marginBottom: i < EXPERIENCE.length - 1 ? "28px" : 0 }}
+                >
+                  {/* pink line on the left */}
+                  <div style={{ width: "2px", background: "#e879a0", minHeight: "60px", flexShrink: 0 }} />
+                  <div>
+                    <p style={{ fontSize: "13px", color: "#e879a0", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "6px" }}>{job.role}</p>
+                    <p style={{ fontSize: "14px", color: "var(--charcoal)", lineHeight: "1.7" }}>{job.org}</p>
+                    <p style={{ fontSize: "13px", color: "var(--muted)" }}>{job.place}</p>
+                    <p style={{ fontSize: "12px", color: "var(--muted)", marginTop: "4px" }}>{job.dates}</p>
+
+                    {/* only shows bullets if this job has any */}
+                    {job.bullets.length > 0 && (
+                      <ul style={{ listStyle: "none", marginTop: "10px" }}>
+                        {job.bullets.map((b) => (
+                          <li
+                            key={b}
+                            style={{ fontSize: "13px", color: "var(--charcoal)", lineHeight: "1.7", paddingLeft: "14px", position: "relative", marginBottom: "4px" }}
+                          >
+                            <span style={{ position: "absolute", left: 0, color: "#e879a0" }}>•</span>
+                            {b}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
                 </div>
-              </div>
-              <div style={{ display: "flex", gap: "16px" }}>
-                <div style={{ width: "2px", background: "#e879a0", minHeight: "60px", flexShrink: 0 }}/>
-                <div>
-                  <p style={{ fontSize: "13px", color: "#e879a0", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "6px" }}>Software Engineering Intern</p>
-                  <p style={{ fontSize: "14px", color: "var(--charcoal)", lineHeight: "1.7" }}>Align Technology</p>
-                  <p style={{ fontSize: "13px", color: "var(--muted)" }}>Pune, India</p>
-                  <p style={{ fontSize: "12px", color: "var(--muted)", marginTop: "4px" }}>Aug – Oct 2022</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-  
+
         </div>
       </section>
     );
   }
-//PAGE 5: Projects 
+//PAGE 5: Projects
 function Projects() {
   return (
     <section className="projects-section" id="projects">
       <div className="projects-header reveal">
         <div>
           <div className="section-label" style={{ color: "rgba(240,236,227,0.35)" }}>
-          
+
           </div>
           <h2 className="serif-heading projects-heading">
             Projects<span className="projects-dot">.</span>
           </h2>
         </div>
-        
+
       </div>
       {PROJECTS.map((proj) => (
         <div className="project-item reveal" key={proj.num}>
@@ -592,7 +644,7 @@ function Projects() {
 
 
 
-//PAGE 5: Contact
+//PAGE 6: Contact
 function Contact() {
     const sparks = [
       { top: "8%",  left: "5%",  size: 40, delay: "0s"   },
@@ -606,10 +658,10 @@ function Contact() {
       { top: "80%", right: "4%", size: 44, delay: "0.6s" },
       { top: "92%", right: "8%", size: 22, delay: "1.8s" },
     ];
-  
+
     return (
       <section className="contact-section" id="contact">
-  
+
         {/* PAGE 1 — Quote */}
         <div className="contact-quote-page">
           {sparks.map((s, i) => (
@@ -619,13 +671,13 @@ function Contact() {
             </span>
           ))}
           <div className="contact-quote-block reveal">
-            <p>While I may be a junior with limited experience, I'm overflowing with passion for building and a drive to learn and grow. I'm not afraid to bring fresh perspectives and creativity to the table, and I'm committed to constantly improving my skills.</p>
+            <p>While I may be a senior with limited experience, I'm overflowing with passion for building and a drive to learn and grow. I'm not afraid to bring fresh perspectives and creativity to the table, and I'm committed to constantly improving my skills.</p>
             <br />
             <p>I know it may be a challenge to take a chance on me, but I believe that with my potential and dedication, I can become the best engineer you could hire.</p>
           </div>
           <div className="contact-sig reveal">Riya Shekhar Ubhe</div>
         </div>
-  
+
         {/* PAGE 2 — Thank you */}
         <div className="contact-bottom-page">
           {sparks.map((s, i) => (
@@ -650,7 +702,7 @@ function Contact() {
             </div>
           </div>
         </div>
-  
+
       </section>
     );
   }
