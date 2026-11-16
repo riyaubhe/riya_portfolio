@@ -159,6 +159,18 @@ function useReveal() {
 const PROJECTS = [
   {
     num: "01",
+    category: "Product · Full-Stack",
+    name: "Group Drive\nLive Multi-Car Navigation",
+    bullets: [
+      "Web app for group road trips: every car joins with one share link and sees the others live on a map, along with each car's route to the destination.",
+      "Added a live \"X min behind\" bar using OSRM routes, plus an alert when a car stays off the shared route for 30+ seconds.",
+      "Wrote the PRD first (problem, competitors, MVP scope, risks), then built and shipped the prototype on Vercel with Firebase for real-time sync.",
+    ],
+    tech: ["JavaScript", "Firebase", "Leaflet", "OSRM"],
+    link: "https://group-drive.vercel.app",
+  },
+  {
+    num: "02",
     category: "Data Analytics · SQL · Tableau",
     name: "Starbucks US Market\nExpansion Analysis",
     bullets: [
@@ -170,7 +182,7 @@ const PROJECTS = [
     link: "https://public.tableau.com/views/StarbucksUSMarketExpansionAnalysis/Dashboard1",
   },
   {
-    num: "02",
+    num: "03",
     category: "Machine Learning",
     name: "Air Quality Risk Prediction\n& Trend Analysis",
     bullets: [
@@ -182,7 +194,7 @@ const PROJECTS = [
     link: null,
   },
   {
-    num: "03",
+    num: "04",
     category: "Machine Learning · Data Analytics",
     name: "Student Dropout\nRisk Prediction",
     bullets: [
@@ -194,7 +206,7 @@ const PROJECTS = [
     link: "https://github.com/riyaubhe/student-dropout-risk-prediction",
   },
   {
-    num: "04",
+    num: "05",
     category: "AI / Full-Stack",
     name: "Brev\nAI Learning Assistant",
     bullets: [
@@ -205,7 +217,7 @@ const PROJECTS = [
     link: null,
   },
   {
-    num: "05",
+    num: "06",
     category: "Java / Software Engineering",
     name: "Reviewer\nManagement System",
     bullets: [
