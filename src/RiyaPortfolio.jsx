@@ -171,6 +171,18 @@ const PROJECTS = [
   },
   {
     num: "02",
+    category: "LLM Pipeline · Automation",
+    name: "SaaS Hiring & Layoff\nSignal Tracker",
+    bullets: [
+      "Pulls the last 24 hours of Hacker News stories every day and uses the Gemini API to pick out which companies are hiring or doing layoffs.",
+      "Runs on its own every morning with GitHub Actions, saves new signals to a CSV, and shows the trends in a Streamlit dashboard.",
+      "Containerized with Docker, with Pytest tests that run on every push using fake APIs, so they're fast, free, and don't need an API key.",
+    ],
+    tech: ["Python", "Gemini API", "Pandas", "Streamlit", "Docker", "GitHub Actions"],
+    link: "https://github.com/riyaubhe/saas-intel-agent",
+  },
+  {
+    num: "03",
     category: "Data Analytics · SQL · Tableau",
     name: "Starbucks US Market\nExpansion Analysis",
     bullets: [
@@ -182,7 +194,7 @@ const PROJECTS = [
     link: "https://public.tableau.com/views/StarbucksUSMarketExpansionAnalysis/Dashboard1",
   },
   {
-    num: "03",
+    num: "04",
     category: "Machine Learning",
     name: "Air Quality Risk Prediction\n& Trend Analysis",
     bullets: [
@@ -194,7 +206,7 @@ const PROJECTS = [
     link: null,
   },
   {
-    num: "04",
+    num: "05",
     category: "Machine Learning · Data Analytics",
     name: "Student Dropout\nRisk Prediction",
     bullets: [
@@ -206,7 +218,7 @@ const PROJECTS = [
     link: "https://github.com/riyaubhe/student-dropout-risk-prediction",
   },
   {
-    num: "05",
+    num: "06",
     category: "AI / Full-Stack",
     name: "Brev\nAI Learning Assistant",
     bullets: [
@@ -217,7 +229,7 @@ const PROJECTS = [
     link: null,
   },
   {
-    num: "06",
+    num: "07",
     category: "Java / Software Engineering",
     name: "Reviewer\nManagement System",
     bullets: [
@@ -555,7 +567,7 @@ function Skills() {
               </div>
               <div>
                 <p style={{ fontFamily: "'Caveat', cursive", fontSize: "18px", color: "#e879a0", marginBottom: "12px" }}>Tools</p>
-                {["GitHub", "Figma", "Notion", "Canva", "CapCut"].map((s) => (
+                {["GitHub", "Docker", "GitHub Actions", "Figma", "Notion"].map((s) => (
                   <p key={s} style={{ fontSize: "14px", color: "var(--charcoal)", marginBottom: "6px" }}>• {s}</p>
                 ))}
               </div>
